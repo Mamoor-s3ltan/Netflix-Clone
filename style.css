@@ -149,7 +149,7 @@ nav button {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 70vw;
+    max-width: 80vw;
     margin: auto;
 }
 
@@ -191,7 +191,7 @@ nav button {
 
 .second {
     display: flex;
-    max-width: 70vw;
+    max-width: 80vw;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -210,9 +210,9 @@ nav button {
 }
 
 .s_img {
-    width: 30vw;
+    /* width: 100%; */
     position: relative;
-    right: 90px;
+    left: 50px;
 }
 
 .s_text :first-child {
@@ -286,7 +286,7 @@ nav button {
 }
 
 .faqbox:hover {
-    background-color: rgba(65, 65, 65,1);
+    background-color: rgba(65, 65, 65, 1);
 }
 
 .faqbox {
@@ -304,49 +304,111 @@ nav button {
 
 }
 
-@media screen and (max-width: 1000px) {
-    body {
-      background-color: rgb(255, 23, 23);
-    }
-  }
 
-  @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .text> :first-child {
         font-weight: 900;
         font-size: 24px;
         text-align: center;
     }
+
     .secimg video {
         position: absolute;
         height: 73px;
         right: -1px;
         top: 25px;
     }
+
     .secimg img {
         position: relative;
         z-index: 10;
         width: 33vw;
     }
+
     .first {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-top: 24px;
         max-width: 70vw;
         margin: auto;
     }
+
     .second {
-        display: flex;
         flex-direction: column;
-        max-width: 100vw;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
     }
 
-}
+    .text {
+        font-family: 'MartelSans', sans-serif;
+        font-weight: 800;
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        gap: 20px;
+        position: relative;
+        z-index: 10;
+    }
 
-    
-    
+    .text-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .box {
+        height: 46vh;
+    }
+
+    .main {
+        height: 46vh;
+    }
+
+    .sectext :first-child {
+        font-size: 24px;
+    }
+
+    .sectext :nth-child(2) {
+        font-size: 16px;
+    }
+
+    .secimg img {
+        width: 250px;
+    }
+
+    .secimg video {
+        height: 129px;
+    }
+
+    .s_img {
+        width: 100%;
+        left: -43px;
+        position: relative;
+        overflow-x: clip;
+    }
+
+    .kids {
+        flex-direction: column;
+    }
+
+    .kids_img img {
+        max-width: 80vw;
+        left: 6px;
+    }
+    .s_img img{
+        width: 100%;
+        left: 37px;
+        position: relative;
+    }
+    .third{
+        padding-right: 42px;
+    }
    
-  
+
+}
